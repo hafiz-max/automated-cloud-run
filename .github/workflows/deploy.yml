@@ -15,10 +15,10 @@ jobs:
       id-token: 'write'
 
     env:
-      PROJECT_ID: 'YOUR_PROJECT_ID'      # Replace with your GCP project ID
+      PROJECT_ID: 'automated-cloud-run'  # Replace with your GCP project ID
       REGION: 'asia-southeast1'          # Replace with your GCP region
-      WIF_PROVIDER: 'projects/YOUR_PROJECT_NUMBER/locations/global/workloadIdentityPools/github-pool/providers/github-provider'
-      SA_EMAIL: 'github-actions-sa@YOUR_PROJECT_ID.iam.gserviceaccount.com'
+      WIF_PROVIDER: 'projects/206626117716/locations/global/workloadIdentityPools/github-pool/providers/github-provider'
+      SA_EMAIL: 'github-actions-sa@automated-cloud-run.iam.gserviceaccount.com'
 
     steps:
     - name: Checkout Code
